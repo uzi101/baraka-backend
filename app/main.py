@@ -3,6 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api import root, auth  # this imports your first route
 from app.core.config import settings  # loads env config
 
+
+print("📦 DATABASE_URL:", settings.DATABASE_URL)
+
 app = FastAPI(
     title="Baraka API",
     version="0.1.0",
